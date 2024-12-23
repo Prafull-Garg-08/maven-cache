@@ -30,3 +30,12 @@ jobs:
         cache: maven
     - name: Run the Maven verify phase
       run: mvn --batch-mode --update-snapshots verify
+    - name: listing
+      run: |
+          pwd
+          ls
+          ls -a
+          cd ~
+          pwd
+          ls -a
+          ls ~/.cache
